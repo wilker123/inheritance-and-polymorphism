@@ -11,7 +11,7 @@ namespace Project_inheritance_and_polymorphism
     {
         static void Main(string[] args)
         {
-           
+
         }
     }
 }

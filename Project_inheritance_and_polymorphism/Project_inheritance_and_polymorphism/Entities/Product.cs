@@ -19,7 +19,7 @@ namespace Project_inheritance_and_polymorphism.Entities
             Price = price;
         }
 
-        public string PriceTag()
+        public virtual string PriceTag()
         {
             return Name + " $" + Price;
         }
