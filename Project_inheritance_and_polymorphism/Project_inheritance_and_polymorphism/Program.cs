@@ -11,7 +11,9 @@ namespace Project_inheritance_and_polymorphism
     {
         static void Main(string[] args)
         {
+            Product p = new ImportedProduct("PS3", 1200, 20.00);
 
+            Console.WriteLine(p.PriceTag());
         }
     }
 }
