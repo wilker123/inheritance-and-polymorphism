@@ -8,7 +8,7 @@ namespace Project_inheritance_and_polymorphism.Entities
 {
     class UsedProduct : Product
     {
-        public DateTime ManufactureDate { get; set; }
+        public DateTime ManufactureDate { get; protected set; }
 
         public UsedProduct() { }
 
@@ -19,7 +19,7 @@ namespace Project_inheritance_and_polymorphism.Entities
 
         public override string PriceTag()
         {
-            return base.PriceTag() + " (used) - (Manufacture date: " + ManufactureDate.ToString() + ")";
+            return base.PriceTag() + " (used) - (Manufacture date: " + ManufactureDate.ToString("dd/MM/yyyy") + ")";
         }
 
     }

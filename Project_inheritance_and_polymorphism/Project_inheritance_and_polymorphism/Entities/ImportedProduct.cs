@@ -8,7 +8,7 @@ namespace Project_inheritance_and_polymorphism.Entities
 {
     class ImportedProduct : Product
     {
-        public double CustomsFee { get; set; }
+        public double CustomsFee { get; protected set; }
 
         public ImportedProduct() { }
 

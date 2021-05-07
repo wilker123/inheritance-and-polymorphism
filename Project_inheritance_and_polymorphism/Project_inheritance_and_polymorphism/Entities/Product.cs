@@ -9,7 +9,7 @@ namespace Project_inheritance_and_polymorphism.Entities
     class Product
     {
         public string Name { get; set; }
-        public double Price { get; set; }
+        public double Price { get; protected set; }
 
         public Product() { }
 
@@ -21,7 +21,7 @@ namespace Project_inheritance_and_polymorphism.Entities
 
         public virtual string PriceTag()
         {
-            return Name + " $" + Price;
+            return Name + " $" + Price.ToString("F2");
         }
 
     }
